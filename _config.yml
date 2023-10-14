@@ -1,41 +1,93 @@
 # Site settings
-course_name: Wireless Communication Networks
+course_name: ECE60022 Wireless Communication Networks
 course_description: "
-The goal of the course is to bootstrap you into software security research. The
-course provides a complete overview of different aspects of software security and
-standard techniques used to solve various software security problems. We discuss
-generic techniques such as Data flow analysis/ type inference/ dynamic analysis
-that are also needed to perform research in other areas such as Software engineering
-and program analysis.
-The course is composed of four components: (i) Vulnerability Finding, (ii) Automated Patching, (iii) Patch Propagation, and (iv) Vulnerability Prevention.
+This course will cover fundamental concepts in mobile wireless systems, such as: 
 <ul>
-<li>Vulnerability Finding: We understand the basics of vulnerability finding techniques: Static analysis
-(Pattern-based/ Dataflow based/ Type-based/DSL based), Dynamic Analysis (Different Flavors of Fuzzing
-and dynamic symbolic execution), Machine Learning, and a combination of all the above.</li>
-
-<li>Automated Patching: Automated Program repair techniques: Pattern-based/ Dynamic analysis based/ Machine learning etc.</li>
-
-<li>Patch Propagation: Understanding the problem of propagating patches caused by software diversity
-and potential solutions.</li>
-
-<li>Vulnerability Prevention: Type-safe languages (Rust, Go, etc.), Retrofitting techniques (Sanitizers: ASAN, etc.),
-Type-safe dialects (Checked C/Cyclone/etc.).</li>
+ <li> *channel modeling*, including propagation, fading factors, capacity, and delay;</li>
+<li> *cellular systems*, including 2G/3G/4G/5G/NextG network architectures;</li>
+<li> *wireless LANs and ad hoc networks*, including unstructured communication among the Internet
+of Things (IoT);
+<li> *resource allocation*, including power control, channel assignment, scheduling, routing, and
+random access protocols, and </li>
+<li> *wireless intelligence*, including machine learning considerations in heterogeneous mobile
+systems.</li>
 </ul>
+Besides understanding the methodologies driving emerging and legacy wireless systems, the
+course will emphasize the engineering challenges that must be considered for the future of wireless
+communications networks."
 
-For every component, we will start with basics and cover the state-of-the-art techniques.
-We will also be reading research papers and try to analyze the pros and cons critically."
-evaluation: "
-We will use the following distribution for grading:
-<ul>
-  <li>Four assignments (10% each, Total: 40%).</li>
-  <li>Midterm 1 (10%).</li>
-  <li>Midterm 2 (10%).</li>
-  <li>Paper presentation (10%).</li>
-  <li>Course Project (30%).</li>
-</ul>
-This is a project-heavy course with one-third of the grade depends on the successful
-completion of the project.
+# The course is composed of four components: (i) Vulnerability Finding, (ii) Automated Patching, (iii) Patch Propagation, and (iv) Vulnerability Prevention.
+# <ul>
+# <li>Vulnerability Finding: We understand the basics of vulnerability finding techniques: Static analysis
+# (Pattern-based/ Dataflow based/ Type-based/DSL based), Dynamic Analysis (Different Flavors of Fuzzing
+# and dynamic symbolic execution), Machine Learning, and a combination of all the above.</li>
+
+# <li>Automated Patching: Automated Program repair techniques: Pattern-based/ Dynamic analysis based/ Machine learning etc.</li>
+
+# <li>Patch Propagation: Understanding the problem of propagating patches caused by software diversity
+# and potential solutions.</li>
+
+# <li>Vulnerability Prevention: Type-safe languages (Rust, Go, etc.), Retrofitting techniques (Sanitizers: ASAN, etc.),
+# Type-safe dialects (Checked C/Cyclone/etc.).</li>
+# </ul>
+
+course_prereqs: "
+In the past, ECE 60022 has required ECE 547 (Introduction to Computer Communication Networks) as a pre-requisite. For this offering, while some background understanding of
+networking (such as in ECE 547) will be helpful, it is not required.
+Students are expected to have a basic understanding of probability and digital communications, as
+would be obtained from a typical undergraduate EE/ECE program."
+
+learning_objectives: " Students will leave the course with an understanding of the fundamental principles underlying
+wireless communications. This understanding will cross several layers of the network protocol
+stack, from the physical wireless channels that these communication systems operate over to 
+network design, control, and protocol issues. Students will gain familiarity with the state-of-the art
+technologies and key challenges that need to be addressed if resource-intensive, latency-sensitive
+applications (such as those arising from machine learning) are to be run on wireless channels.
 "
+
+# For every component, we will start with basics and cover the state-of-the-art techniques.
+# We will also be reading research papers and try to analyze the pros and cons critically."
+evaluation: "
+The following forms of assessment throughout the semester will determine your grades:
+<ul> <li> Homework (25%)</li>
+<ul>
+<li> There will be 4 graded homework assignments throughout the semester, all equally weighted.
+One will be due approximately every 3 weeks.</li>
+<li> These assignments will have math-type problems in them. Students are encouraged to write up
+their solutions using Latex, though hand-written problem sets will be accepted too.</li>
+<li> Homework must be turned in as a hardcopy to the instructor.</li>
+</ul>
+<li> Exams (35%)</li>
+<ul>
+<li> There will be two exams throughout the semester, both equally weighted. The first one will be
+in mid-February, and the second one will be in early-April. There is no final exam, and neither
+of the exams are cumulative.</li> 
+<li> The exams will either be in class or take home (to be decided).</li> 
+</ul> 
+<li> Projects (40%)</li>
+<ul>
+<li> There will be one assigned “mini-project”, with the topic chosen by the instructor. This will be
+10% of the final grade. It will be released towards the end of January, and you will have roughly
+one month to work on it.</li> 
+<li> Most importantly, there will be a “term project”, which will be on a research topic selected by
+the student (and approved by the instructor). This will be 30% of the final grade. Students are
+strongly encouraged to tie this project in with their research interests. Project proposals will be
+due in early March. The deliverables will be a final report prepared in the format of a 6-page
+research paper, and a presentation during the last week of classes.</li> 
+</ul> 
+</ul> "
+
+# We will use the following distribution for grading:
+# <ul>
+#   <li>Four assignments (10% each, Total: 40%).</li>
+#   <li>Midterm 1 (10%).</li>
+#   <li>Midterm 2 (10%).</li>
+#   <li>Paper presentation (10%).</li>
+#   <li>Course Project (30%).</li>
+# </ul>
+# This is a project-heavy course with one-third of the grade depends on the successful
+# completion of the project.
+# "
 course_project: "The goal of the course project is to enable students to experience various aspects of
 software security research.  The result of the project will be a conference-style presentation.
 This is a semester-long project and is recommended to be done in groups of up to three students.
@@ -44,23 +96,7 @@ completion of these milestones and the presentation. Potential project ideas are
 <a href=\"https://docs.google.com/spreadsheets/d/1Tmm2GvXN-9Uo8grPoXuJoPQM2JYPeSCf8a16RkJmFkA/\">here</a>.
 Although, students can pick a project of their choice after discussing it with the professor."
 
-course_prereqs: "This is a hands-on graduate-level course, with most of the assignments involves writing C/C++ code.
-I am expecting the students to have the following background:
-<ul>
-    <li>Should be very comfortable with writing C/C++ code: We will be working with clang/LLVM, which requires considerable experience with C/C++ codebases.</li>
-    <li>Should be comfortable with operating system concepts, especially: Process Isolation, Memory Management (Virtual memory/Demand paging), Processor privilege levels (e.g., x86 Rings: 0-3).</li>
-    <li>Knowledge about basic software security concepts such as buffer overflows, return-oriented programming, etc.</li>
-</ul>"
 
-learning_objectives: "This course is aimed at introducing students to various aspects of software security research.
-After finishing the course, the students should:
-<ul>
-   <li>Have a good understanding of software security problems at various stages of software development and deployment.</li>
-   <li>Have a good understanding of principles behind solving various software security problems.</li>
-   <li>Have the ability to use state-of-the art tools to implement software security solutions.</li>
-   <li>Have the ability to systematically solve system security problems.</li>
-</ul>
-"
 
 course_policies: "This course will be run under the \"reasonable adults\" policy wherein it is assumed that all
 students are reasonable adults that want to benefit the most of the course by attending the course regularly,
